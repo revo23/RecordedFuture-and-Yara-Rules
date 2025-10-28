@@ -27,10 +27,40 @@ This capability allows for automated Sigma rule generation from Malware Intellig
 
 **Steps**  
 1. Access RecordedFuture > Threat > Malware Intelligence 
-<img width="1815" height="917" alt="image" src="https://github.com/user-attachments/assets/26360aa9-cc9c-4d45-8a76-5644875e3f1f" />
+<img width="1815" height="917" alt="image" src="https://github.com/user-attachments/assets/88262f7d-fa04-4617-b131-a9ffe08abb00" />
 
 2. Search for malware family (e.g. privateloader)
-3. 
+
+3. Generate YARA
+```
+rule composite_hex_1 {
+    meta:
+        author = "Jenson Goh"
+        date = "2025-10-28"
+        impact = "Matching binaries: 8"
+        hash = "0306778313b74289e440495de6de20e2d26452d9dd82451303d3441f16f8c66f"
+        hash = "22275b7c5a57111aca919f6bbfae171e5e99f5ef777d1043802deb672f5136a0"
+        hash = "3bd8e0efe68826f448c82133ed2115d8752cdc119fe6d3861d2afb6e8a9442f1"
+        hash = "afa631b0721ed1e0f22d8464b19c2571859b470f17d9c04e03f80d1c62fbc5d2"
+        hash = "b2aefe9f49a84f067eded0c993c3cb5acf3504d29a978de02f9c1592f6e1f15b"
+        hash = "ba1d5e82bf560f617d718f6e680b4655b88952251891175e828122390879266f"
+        hash = "ba6b18f6a7590ec1dc2ac2881ddc857f505fed25ff29dc761e204538e3feb96d"
+        hash = "ffb7eb4d41dc3309a61521f921834d31272477fcd2996679a698b672d70aa91e"
+    strings:
+        $str_1 = { 83c418c3909090908b4424088b4c2404 }
+        $str_2 = { 5e5fc39090909090909090909090568b }
+    condition:
+        uint16(0) == 0x5a4d
+        and all of them
+}
+```
+
+| Section   | Purpose                                              |
+| --------- | ---------------------------------------------------- |
+| meta      | Documentation (non-functional)                       |
+| strings   | Indicators to match (text, regex, hex, wide, nocase) |
+| condition | Logic that defines a match                           |
+
 
 **Result**  
 
