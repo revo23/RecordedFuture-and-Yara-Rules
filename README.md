@@ -11,7 +11,7 @@
 3. Generate YARA rule
 4. Generate Sigma rule
 5. Convert YARA rule for Splunk use
-6. Search using rule onto sample log dataset in Splunk
+6. Apply rule onto sample log dataset in Splunk
 
 **Situation**  
 Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation.
