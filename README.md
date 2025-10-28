@@ -47,10 +47,10 @@ rule composite_hex_1 {
         hash = "ba6b18f6a7590ec1dc2ac2881ddc857f505fed25ff29dc761e204538e3feb96d"
         hash = "ffb7eb4d41dc3309a61521f921834d31272477fcd2996679a698b672d70aa91e"
     strings:
-        $str_1 = { 83c418c3909090908b4424088b4c2404 }
-        $str_2 = { 5e5fc39090909090909090909090568b }
+        $str_1 = { 83c418c3909090908b4424088b4c2404 } >>> hexadecimal byte pattern
+        $str_2 = { 5e5fc39090909090909090909090568b } 
     condition:
-        uint16(0) == 0x5a4d
+        uint16(0) == 0x5a4d >>> This enforces detection only in Windows PE files (MZ header).
         and all of them
 }
 ```
