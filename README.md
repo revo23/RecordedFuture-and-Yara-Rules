@@ -27,11 +27,11 @@ Treat actors can easily change a file (hash values) or infrastructure (IPs, doma
 In this example we look into more effective threat hunting depends by using the latest threat intelligence via customized YARA/Sigma rules. CTI platform provides the latest adversary insights while integrated data sources in the SIEM supply the evidence.
 
 **Task**  
-Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules.
+Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules. Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR).
 ```
 New Feature Announcement - Auto Sigma
 Support Article
-This capability allows for automated Sigma rule generation from Malware Intelligence search results with one-click functionality. Auto Sigma accelerates incident response workflows by eliminating time traditionally spent manually writing detection rules, and empowers proactive threat hunting
+This capability allows for automated Sigma rule generation from Malware Intelligence search results with one-click functionality. Auto Sigma accelerates incident response workflows by eliminating time traditionally spent manually writing detection rules, and empowers proactive threat hunting. 
 ```
 
 **Steps**  
