@@ -8,10 +8,8 @@
 **Overview**
 
 **Situation**
-Treat actors can easily change a file or infrastructure to evade detection, making threat hunting harder. 
-CTI provides the adversary insights while integrated data sources supply the evidence. 
-CTI provides the who, why, and how, while the integrated provides the what, the observable evidence inside your environment.
-<img width="1420" height="83" alt="image" src="https://github.com/user-attachments/assets/ac80df8f-8b02-4136-924b-710765202894" />
+Treat actors can easily change a file or infrastructure to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation.
+In this example we look into more effective threat hunting depends by fusing threat intelligence with customized YARA/Sigma rules. CTI provides the adversary insights while integrated data sources in the SIEM supply the evidence.
 
 
 **Task**
