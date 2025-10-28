@@ -23,8 +23,7 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 6. Apply rule onto sample log dataset in Splunk
 
 **Situation**  
-Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation.
-In this example we look into more effective threat hunting depends by using the latest threat intelligence via customized YARA/Sigma rules. CTI platform provides the latest adversary insights while integrated data sources in the SIEM supply the evidence.
+Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation. Our organization received a tip-off from regulators that Pay-per-install(PPI) providers are listing our systems in the APAC region as target systems. In this example, we look into more effective threat hunting depends by using the latest threat intelligence via customized YARA/Sigma rules. CTI platform provides the latest adversary insights while our integrated data sources in the SIEM supply the log evidence.
 
 **Task**  
 Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules. Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR).
