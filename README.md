@@ -26,7 +26,7 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation. Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing our systems in the APAC region as target systems. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA/Sigma rules. CTI platform provides the latest adversary insights while our integrated data sources in the SIEM supply the log evidence.
 
 **Task**  
-Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules. Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR).
+Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR). Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules. 
 ```
 New Feature Announcement - Auto Sigma
 Support Article
@@ -34,7 +34,7 @@ This capability allows for automated Sigma rule generation from Malware Intellig
 ```
 
 **Steps**  
-1. Access RecordedFuture > Threat > Malware Intelligence 
+1. Access RecordedFuture > Threat > Malware Intelligence > Malware Hunting
 <img width="1815" height="917" alt="image" src="https://github.com/user-attachments/assets/88262f7d-fa04-4617-b131-a9ffe08abb00" />
 
 2. Search for malware family (e.g. privateloader)
