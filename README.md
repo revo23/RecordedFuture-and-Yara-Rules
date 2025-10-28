@@ -4,6 +4,15 @@
 
 <img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/582690a2-cc23-4fa3-aadd-98daacf4c9b2" />
 
+The Pyramid of Pain consists of seven levels, from easiest to hardest for attackers to change:
+
+- Hash Values: Unique file signatures (e.g., SHA1, MD5) that attackers can easily modify by recompiling malware
+- IP Addresses: Network locations that attackers can quickly change by switching servers
+- Domain Names: More costly than IPs to replace, but still manageable for determined adversaries
+- Network Artifacts: Observable patterns in traffic like URI structures or unusual user-agents
+- Host Artifacts: Evidence left on endpoints such as registry keys, file paths, or processes
+- Tools: Attack software (e.g., Mimikatz, Cobalt Strike) that requires significant effort to replace
+- TTPs: (Tactics, Techniques, Procedures): The attacker’s behavioral patterns—the most painful to change
 
 **Overview**  
 1. Access Recorded Future
@@ -61,6 +70,7 @@ rule composite_hex_1 {
 | strings   | Indicators to match (text, regex, hex, wide, nocase) |
 | condition | Logic that defines a match                           |
 
+Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools. 
 
 **Result**  
 
