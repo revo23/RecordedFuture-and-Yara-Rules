@@ -24,7 +24,7 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 
 **Situation**  
 Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation.
-In this example we look into more effective threat hunting depends by fusing threat intelligence with customized YARA/Sigma rules. CTI provides the adversary insights while integrated data sources in the SIEM supply the evidence.
+In this example we look into more effective threat hunting depends by using the latest threat intelligence via customized YARA/Sigma rules. CTI platform provides the latest adversary insights while integrated data sources in the SIEM supply the evidence.
 
 **Task**  
 Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules.
