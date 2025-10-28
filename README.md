@@ -1,8 +1,8 @@
 # RecordedFuture-and-Yara-Sigma-Rules
 
-<img width="1328" height="1153" alt="image" src="https://github.com/user-attachments/assets/6488c52b-8bbb-4e0f-99ef-0069c9085588" />
+<img width="828" height="653" alt="image" src="https://github.com/user-attachments/assets/6488c52b-8bbb-4e0f-99ef-0069c9085588" />
 
-<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/582690a2-cc23-4fa3-aadd-98daacf4c9b2" />
+<img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/582690a2-cc23-4fa3-aadd-98daacf4c9b2" />
 
 
 **Overview**
