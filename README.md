@@ -14,7 +14,7 @@
 6. Search using rule onto sample log dataset in Splunk
 
 **Situation**
-Treat actors can easily change a file or infrastructure to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation.
+Treat actors can easily change a file (hash values) or infrastructure (ip, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation.
 In this example we look into more effective threat hunting depends by fusing threat intelligence with customized YARA/Sigma rules. CTI provides the adversary insights while integrated data sources in the SIEM supply the evidence.
 
 **Task**
