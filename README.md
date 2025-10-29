@@ -21,7 +21,15 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 
 
 **Situation**  
-Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation. Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing on forums that our systems in the APAC region can be installed on. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA rules from RecordedFuture that provides the latest adversary insight.
+Threat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as: 
+
+- hypothesis-driven threat hunting
+- CTI integration
+- AI/ML
+- graph-based threat hunting 
+- adversary emulation  
+
+Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing on forums that our systems in the APAC region can be installed on. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA rules from RecordedFuture that provides the latest adversary insight.
 
 **Task**  
 Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR) by threat hunting using latest IoCs from CTI platform. Also eliminate hours of manual rule-writing with 'Auto YARA Rules' feature. 
