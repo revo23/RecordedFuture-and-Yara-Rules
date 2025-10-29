@@ -15,12 +15,10 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 - TTPs: (Tactics, Techniques, Procedures): The attacker’s behavioral patterns—the most painful to change
 
 **Overview**  
-1. Access Recorded Future
-2. Search for specific malware family
-3. Generate YARA rule
-4. Generate Sigma rule
-5. Convert YARA rule for Splunk use
-6. Apply rule onto sample log dataset in Splunk
+1. Export YARA/Sigma rules from Recorded Future
+2. Conversion to acceptable format
+3. Scan files/logs
+
 
 **Situation**  
 Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation. Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing our systems in the APAC region as target systems. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA/Sigma rules from CTI platform that provides the latest adversary insight.
