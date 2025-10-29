@@ -36,8 +36,8 @@ Look for PrivateLoader malware downloaders in environment that have evaded curre
 sample.tags == "family:privateloader"
 ```
 
-3. Generate YARA  
-truncated 
+3. Click 'Generate YARA'  
+truncated yar file: 
 ```
 rule composite_hex_1 {
     meta:
