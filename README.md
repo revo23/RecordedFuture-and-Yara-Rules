@@ -29,10 +29,10 @@ Threat actors can easily change a file (hash values) or infrastructure (IPs, dom
 - graph-based threat hunting 
 - adversary emulation  
 
-Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing on forums that our systems in the APAC region can be installed on. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA rules from RecordedFuture that provides the latest adversary insight.
+Our organization received a tip-off from regulators/ISAC that the PrivateLoader Pay-per-install(PPI) provider are listing on forums that our systems in the APAC region can be installed upon through that PPI service. However, SOC has not detected any incidents regarding PrivateLoader recently.  
 
 **Task**  
-Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR) by threat hunting using latest IoCs from CTI platform. Also eliminate hours of manual rule-writing with 'Auto YARA Rules' feature. 
+In this scenario, we look into conducting threat hunting for PrivateLoader malware that could have evaded EDR/AV by using the latest CTI from RecordedFuture that provides the latest IoCs via customized YARA rules. Also eliminate hours of manual rule-writing with 'Auto YARA Rules' feature. 
 
 
 **Steps**  
@@ -81,7 +81,7 @@ Recorded Future outputs those byte sequences as continuous raw hex instead of sp
 ```
 Usage: yara64.exe [OPTION]... [NAMESPACE:]RULES_FILE... FILE | DIR | PID  
 ```
-4. Create sample rule to test first  
+4. Create sample rule and program to test first  
 ```
 rule hello_world_str {
     meta:
@@ -133,9 +133,9 @@ Tamper protection > Toggle Real-time protection: off
 ```
 .\yara64.exe .\privateloader.yar .\malwares
 ```
-No results were seen, this is expected as the YARA rules looks for newer malware and the malware from MalwareBazaar are proabably old.
+No results were seen, this is expected as the YARA rules looks for newer malware and the malware from MalwareBazaar are proabably older.
 
-12. Add one of the older malware from MalwareBazaar into the search query using it's SHA256 to include and generate a YARA rule that will detect it.  
+12. Add one of the older malware from MalwareBazaar into the search query using its SHA256 to include and generate a YARA rule that will detect it.  
 ```
 static.sha256 == "dbd6fcf0495ae49cef1cf8b2f65f0cdcc16b0c4421f60ec88b8922f18aef1dc9" or sample.tags == "family:privateloader"
 ```
@@ -146,7 +146,7 @@ Yes, it is detected in rule composite_hex_4.
 <img width="1325" height="658" alt="image" src="https://github.com/user-attachments/assets/cf9019fc-56d4-4c91-bae4-42d513bacce9" />  
 
 **Result**  
-We will be able to detect newer variants of PrivateLoader malware that evade current detections trough CTI integration.
+In a relatively quick way we will be able to detect newer variants of PrivateLoader malware that evade current detections through CTI integration. 
 
 **References**  
 https://yara.readthedocs.io/en/stable/index.html  
