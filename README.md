@@ -104,7 +104,10 @@ Build C++ file into EXE
 g++ -g .\helloworld.cpp -o helloworld.exe
 ```
 Test Yara rule on sample EXE  
-<img width="636" height="61" alt="image" src="https://github.com/user-attachments/assets/8db04148-4eca-4a1c-b7c8-b7465179042a" />
+```
+.\yara64.exe .\helloworldstr.yara .\helloworld.exe
+<img width="636" height="61" alt="image" src="https://github.com/user-attachments/assets/8db04148-4eca-4a1c-b7c8-b7465179042a" />  
+
 Match seen! It works
 
 
