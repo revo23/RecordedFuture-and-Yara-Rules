@@ -82,7 +82,7 @@ rule hello_world_str {
         author = "Jenson Goh"
 
     strings:
-        $hello = "Hellow World!"
+        $hello = "Hello World!"
 
     condition:
         $hello
@@ -100,13 +100,13 @@ int main()
     std::cout << "Hello World!\n";
 }
 ```
-Build C++ file into EXE
+Build C++ file into EXE  
 ```
 g++ -g .\helloworld.cpp -o helloworld.exe
 ```
-Test Yara rule on sample EXE
+Test Yara rule on sample EXE  
 <img width="636" height="61" alt="image" src="https://github.com/user-attachments/assets/8db04148-4eca-4a1c-b7c8-b7465179042a" />
-Match seen!
+Match seen! It works
 
 
 
