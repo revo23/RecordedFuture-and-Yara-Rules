@@ -76,7 +76,7 @@ Recorded Future outputs those byte sequences as continuous raw hex because it is
 
 
 **References**  
-
-https://support.recordedfuture.com/hc/en-us/articles/44633853787795-Auto-Sigma-Rules
-https://www.youtube.com/watch?v=hU8mUJb2Wq0
-https://www.darktrace.com/blog/privateloader-network-based-indicators-of-compromise
+https://yara.readthedocs.io/en/stable/index.html  
+https://support.recordedfuture.com/hc/en-us/articles/44633853787795-Auto-Sigma-Rules  
+https://www.youtube.com/watch?v=hU8mUJb2Wq0  
+https://www.darktrace.com/blog/privateloader-network-based-indicators-of-compromise  
