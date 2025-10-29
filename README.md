@@ -37,7 +37,7 @@ sample.tags == "family:privateloader"
 ```
 
 3. Click 'Generate YARA'  
-truncated yar file: 
+truncated privateloader.yar file: 
 ```
 rule composite_hex_1 {
     meta:
@@ -68,7 +68,7 @@ rule composite_hex_1 {
 | condition | Logic that defines a match                           |
 
 There are three types of strings in YARA: hexadecimal strings (curly brackets), text strings (double quotes) and regular expressions.  
-Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools.  
+Recorded Future outputs those byte sequences as continuous raw hex instead of spaced because it is a neutral data format suitable for many security tools.  
 ```
 Usage: yara64.exe [OPTION]... [NAMESPACE:]RULES_FILE... FILE | DIR | PID  
 ```
