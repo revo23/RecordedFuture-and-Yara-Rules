@@ -32,6 +32,9 @@ Look for PrivateLoader malware downloaders in environment that have evaded curre
 <img width="1815" height="917" alt="image" src="https://github.com/user-attachments/assets/88262f7d-fa04-4617-b131-a9ffe08abb00" />  
 
 2. Search for malware family (e.g. privateloader)  
+```
+sample.tags == "family:privateloader"
+```
 
 3. Generate YARA  
 truncated 
@@ -117,14 +120,16 @@ Tamper protection > Toggle Real-time protection: off
 10. Download PrivateLoader malware from MalwareBazaar and extract using 7zip (password: infected) into malwares folder  
 <img width="712" height="385" alt="image" src="https://github.com/user-attachments/assets/b26eaa42-12cf-4ed4-89ef-e336ea7722e1" />
 
-11. Use privateloader YARA rule on malwares directory
+11. Use privateloader YARA rule on malwares directory  
 ```
 .\yara64.exe .\privateloader.yar .\malwares
 ```
 No results were seen, this is expected as the YARA rules looks for newer malwarew and the malware from MalwareBazaar are proabably old.
 
-12. Add one of the older malware from MalwareBazaar into the search query using it's SHA256 to include and generate a YARA rule that will detect it.
-
+12. Add one of the older malware from MalwareBazaar into the search query using it's SHA256 to include and generate a YARA rule that will detect it.  
+```
+static.sha256 == "dbd6fcf0495ae49cef1cf8b2f65f0cdcc16b0c4421f60ec88b8922f18aef1dc9" or sample.tags == "family:privateloader"
+```
 
 **Result**  
 
