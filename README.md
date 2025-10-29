@@ -111,7 +111,7 @@ g++ -g .\helloworld.cpp -o helloworld.exe
 ```
 <img width="636" height="61" alt="image" src="https://github.com/user-attachments/assets/8db04148-4eca-4a1c-b7c8-b7465179042a" />  
 
-Match seen! It works  
+Match seen! It works.   
 
 9. Turn off Defender and install 7zip 
 Tamper protection > Toggle Real-time protection: off
@@ -133,13 +133,12 @@ static.sha256 == "dbd6fcf0495ae49cef1cf8b2f65f0cdcc16b0c4421f60ec88b8922f18aef1d
 ```
 
 13. The rule should detect 1 result  
-<img width="912" height="120" alt="image" src="https://github.com/user-attachments/assets/815a516d-3323-4a5e-9bea-dee12c845b8f" />
-Yes, it is detected in rule composite_hex_4  
-<img width="1325" height="658" alt="image" src="https://github.com/user-attachments/assets/cf9019fc-56d4-4c91-bae4-42d513bacce9" />
-
+<img width="912" height="120" alt="image" src="https://github.com/user-attachments/assets/815a516d-3323-4a5e-9bea-dee12c845b8f" />  
+Yes, it is detected in rule composite_hex_4.   
+<img width="1325" height="658" alt="image" src="https://github.com/user-attachments/assets/cf9019fc-56d4-4c91-bae4-42d513bacce9" />  
 
 **Result**  
-
+We will be able to detect newer variants of PrivateLoader malware that evade current detections trough CTI integration.
 
 **References**  
 https://yara.readthedocs.io/en/stable/index.html  
