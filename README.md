@@ -89,8 +89,25 @@ rule hello_world_str {
 }
 ```
 
-Install GCC in VSCode  
-<img width="1512" height="754" alt="image" src="https://github.com/user-attachments/assets/7447034d-3eb4-4e66-870a-326b6efa7657" />
+Install MinGW  
+
+Create test C++ file
+```
+#include <iostream>
+
+int main()
+{
+    std::cout << "Hello World!\n";
+}
+```
+Build C++ file into EXE
+```
+g++ -g .\helloworld.cpp -o helloworld.exe
+```
+Test Yara rule on sample EXE
+<img width="636" height="61" alt="image" src="https://github.com/user-attachments/assets/8db04148-4eca-4a1c-b7c8-b7465179042a" />
+Match seen!
+
 
 
 Turn off Defender
