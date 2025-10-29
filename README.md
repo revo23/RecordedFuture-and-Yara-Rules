@@ -70,8 +70,27 @@ rule composite_hex_1 {
 
 Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools. 
 
+Usage: yara64.exe [OPTION]... [NAMESPACE:]RULES_FILE... FILE | DIR | PID
 
+4. Convert exported YARA 
 
+Sample rule to test first
+```
+rule hello_world_str {
+    meta:
+        description = "simple proof-of-concept to show YARA rules"
+        author = "Jenson Goh"
+
+    strings:
+        $hello = "Hellow World!"
+
+    condition:
+        $hello
+}
+```
+
+Install GCC in VSCode  
+<img width="1512" height="754" alt="image" src="https://github.com/user-attachments/assets/7447034d-3eb4-4e66-870a-326b6efa7657" />
 
 
 Turn off Defender
@@ -91,7 +110,8 @@ Restart your computer to apply the changes. Windows Defender should now be perma
 ```
 <img width="1679" height="897" alt="image" src="https://github.com/user-attachments/assets/477c26ee-78da-442d-8cc8-c3e576836d4d" />
 
-Download PrivateLoader samples
+Download PrivateLoader zip files and extract using 7zip (password: infected)
+
 
 **Result**  
 
