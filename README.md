@@ -111,28 +111,22 @@ g++ -g .\helloworld.cpp -o helloworld.exe
 ```
 <img width="636" height="61" alt="image" src="https://github.com/user-attachments/assets/8db04148-4eca-4a1c-b7c8-b7465179042a" />  
 
-Match seen! It works
+Match seen! It works  
 
+9. Turn off Defender and install 7zip 
+Tamper protection > Toggle Real-time protection: off
 
+<img width="995" height="730" alt="image" src="https://github.com/user-attachments/assets/bca846cf-f3bf-44c8-97aa-ee21222ff135" />  
 
-Turn off Defender
+10. Download PrivateLoader zip files and extract using 7zip (password: infected) into malwares folder  
+<img width="712" height="385" alt="image" src="https://github.com/user-attachments/assets/b26eaa42-12cf-4ed4-89ef-e336ea7722e1" />
 
+11. Use privateloader YARA rule on malwares directory
 ```
-Method 2: Using the Group Policy Editor (For Windows Pro and Enterprise)
-
-Open the Group Policy Editor:
-Press Windows + R, type gpedit.msc, and press Enter.
-Navigate to Windows Defender Settings:
-Go to Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus.
-Disable Microsoft Defender Antivirus:
-Double-click on Turn off Microsoft Defender Antivirus.
-Select Enabled and click Apply, then OK.
-Restart Your Computer:
-Restart your computer to apply the changes. Windows Defender should now be permanently disabled.
+.\yara64.exe .\privateloader.yar .\malwares
 ```
-<img width="1679" height="897" alt="image" src="https://github.com/user-attachments/assets/477c26ee-78da-442d-8cc8-c3e576836d4d" />
 
-Download PrivateLoader zip files and extract using 7zip (password: infected)
+
 
 
 **Result**  
