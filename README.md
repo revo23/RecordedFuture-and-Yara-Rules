@@ -32,7 +32,7 @@ Threat actors can easily change a file (hash values) or infrastructure (IPs, dom
 Our organization received a tip-off from regulators/ISAC that the PrivateLoader Pay-per-install(PPI) provider are listing on forums that our systems in the APAC region can be installed upon through that PPI service. However, SOC has not detected any incidents regarding PrivateLoader recently.  
 
 **Task**  
-In this scenario, we look into conducting threat hunting for PrivateLoader malware that could have evaded EDR/AV by using the latest CTI from RecordedFuture that provides the latest IoCs via customized YARA rules. Also eliminate hours of manual rule-writing with 'Auto YARA Rules' feature. 
+In this scenario, we look into conducting threat hunting for PrivateLoader malware that could have evaded EDR/AV by using RecordedFuture that provides the latest IoCs. Also eliminate hours of manual rule-writing with 'Auto YARA Rules' feature. 
 
 
 **Steps**  
