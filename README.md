@@ -141,7 +141,9 @@ static.sha256 == "dbd6fcf0495ae49cef1cf8b2f65f0cdcc16b0c4421f60ec88b8922f18aef1d
 
 13. The privateloader_plus_1.yar YARA rule should detect 1 result  
 <img width="912" height="120" alt="image" src="https://github.com/user-attachments/assets/815a516d-3323-4a5e-9bea-dee12c845b8f" />  
+
 Yes! It is detected in rule composite_hex_4.   
+
 <img width="1325" height="658" alt="image" src="https://github.com/user-attachments/assets/cf9019fc-56d4-4c91-bae4-42d513bacce9" />  
 
 **Result**  
