@@ -59,6 +59,7 @@ rule composite_hex_1 {
         uint16(0) == 0x5a4d  // This enforces detection only in Windows PE files (MZ header).
         and all of them
 }
+.......
 ```
 
 | Section   | Purpose                                              |
