@@ -24,7 +24,7 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 Threat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as: 
 
 - hypothesis-driven threat hunting
-- CTI integration
+- **CTI integration**
 - AI/ML
 - graph-based threat hunting 
 - adversary emulation  
