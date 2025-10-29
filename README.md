@@ -57,7 +57,7 @@ rule composite_hex_1 {
         $str_1 = { 83c418c3909090908b4424088b4c2404 } 
         $str_2 = { 5e5fc39090909090909090909090568b } 
     condition:
-        uint16(0) == 0x5a4d >>> This enforces detection only in Windows PE files (MZ header).
+        uint16(0) == 0x5a4d  // This enforces detection only in Windows PE files (MZ header).
         and all of them
 }
 ```
