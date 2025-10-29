@@ -1,4 +1,4 @@
-# RecordedFuture-and-Yara-Sigma-Rules
+# RecordedFuture-and-Yara-Rules
 
 <img width="528" height="353" alt="image" src="https://github.com/user-attachments/assets/6488c52b-8bbb-4e0f-99ef-0069c9085588" />
 
