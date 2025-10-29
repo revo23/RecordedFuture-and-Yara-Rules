@@ -54,7 +54,7 @@ rule composite_hex_1 {
         hash = "ba6b18f6a7590ec1dc2ac2881ddc857f505fed25ff29dc761e204538e3feb96d"
         hash = "ffb7eb4d41dc3309a61521f921834d31272477fcd2996679a698b672d70aa91e"
     strings:
-        $str_1 = { 83c418c3909090908b4424088b4c2404 } >>> hexadecimal byte pattern
+        $str_1 = { 83c418c3909090908b4424088b4c2404 } 
         $str_2 = { 5e5fc39090909090909090909090568b } 
     condition:
         uint16(0) == 0x5a4d >>> This enforces detection only in Windows PE files (MZ header).
@@ -68,11 +68,10 @@ rule composite_hex_1 {
 | strings   | Indicators to match (text, regex, hex, wide, nocase) |
 | condition | Logic that defines a match                           |
 
+There are three types of strings in YARA: hexadecimal strings (curly brackets), text strings (double quotes) and regular expressions.
 Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools. 
 
 Usage: yara64.exe [OPTION]... [NAMESPACE:]RULES_FILE... FILE | DIR | PID
-
-4. Convert exported YARA 
 
 Sample rule to test first
 ```
