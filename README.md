@@ -32,12 +32,12 @@ This capability allows for automated Sigma rule generation from Malware Intellig
 ```
 
 **Steps**  
-1. Access RecordedFuture > Threat > Malware Intelligence > Malware Hunting
-<img width="1815" height="917" alt="image" src="https://github.com/user-attachments/assets/88262f7d-fa04-4617-b131-a9ffe08abb00" />
+1. Access RecordedFuture > Threat > Malware Intelligence > Malware Hunting  
+<img width="1815" height="917" alt="image" src="https://github.com/user-attachments/assets/88262f7d-fa04-4617-b131-a9ffe08abb00" />  
 
-2. Search for malware family (e.g. privateloader)
+2. Search for malware family (e.g. privateloader)  
 
-3. Generate YARA
+3. Generate YARA  
 truncated 
 ```
 rule composite_hex_1 {
@@ -68,12 +68,12 @@ rule composite_hex_1 {
 | strings   | Indicators to match (text, regex, hex, wide, nocase) |
 | condition | Logic that defines a match                           |
 
-There are three types of strings in YARA: hexadecimal strings (curly brackets), text strings (double quotes) and regular expressions.
-Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools. 
-
-Usage: yara64.exe [OPTION]... [NAMESPACE:]RULES_FILE... FILE | DIR | PID
-
-Sample rule to test first
+There are three types of strings in YARA: hexadecimal strings (curly brackets), text strings (double quotes) and regular expressions.  
+Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools.  
+```
+Usage: yara64.exe [OPTION]... [NAMESPACE:]RULES_FILE... FILE | DIR | PID  
+```
+4. Create sample rule to test first  
 ```
 rule hello_world_str {
     meta:
@@ -88,9 +88,9 @@ rule hello_world_str {
 }
 ```
 
-Install MinGW  
+5. Install MinGW  
 
-Create test C++ file
+6. Create test C++ file  
 ```
 #include <iostream>
 
@@ -99,11 +99,13 @@ int main()
     std::cout << "Hello World!\n";
 }
 ```
-Build C++ file into EXE  
+
+7. Build C++ file into EXE  
 ```
 g++ -g .\helloworld.cpp -o helloworld.exe
 ```
-Test Yara rule on sample EXE  
+
+8. Test Yara rule on sample EXE  
 ```
 .\yara64.exe .\helloworldstr.yara .\helloworld.exe
 ```
