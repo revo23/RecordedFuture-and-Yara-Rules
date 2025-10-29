@@ -120,7 +120,7 @@ g++ -g .\helloworld.cpp -o helloworld.exe
 
 Match seen! It works.   
 
-9. Turn off Defender and install 7zip 
+9. Turn off Defender and install 7zip  
 Tamper protection > Toggle Real-time protection: off
 
 <img width="995" height="730" alt="image" src="https://github.com/user-attachments/assets/bca846cf-f3bf-44c8-97aa-ee21222ff135" />  
