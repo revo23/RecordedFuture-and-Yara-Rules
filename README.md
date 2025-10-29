@@ -15,16 +15,16 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 - TTPs: (Tactics, Techniques, Procedures): The attacker’s behavioral patterns—the most painful to change
 
 **Overview**  
-1. Export YARA rules from RecordedFuture
+1. Export YARA rules with latest malware indicators from RecordedFuture
 2. Conversion to acceptable format
 3. Scan files/logs
 
 
 **Situation**  
-Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation. Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing our systems in the APAC region as target systems. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA rules from CTI platform that provides the latest adversary insight.
+Treat actors can easily change a file (hash values) or infrastructure (IPs, domains) to evade detection, making threat hunting harder. There are various threat hunting techniques such as using hypothesis-driven threat hunting, CTI integration, AI/ML, graph-based threat hunting and adversary emulation. Our organization received a tip-off from regulators that the PrivateLoader Pay-per-install(PPI) provider are listing on forums that our systems in the APAC region can be installed on. In this scenario, we look into conducting more effective threat hunting by using the latest threat intelligence via customized YARA rules from RecordedFuture that provides the latest adversary insight.
 
 **Task**  
-Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR). Scale threat hunting through automation from CTI platforms such as RecordedFuture. Eliminate hours of manual rule-writing with Auto YARA and Sigma rules. 
+Look for PrivateLoader malware downloaders in environment that have evaded current security tools (i.e. EDR) by threat hunting using latest IoCs from CTI platform. Also eliminate hours of manual rule-writing with 'Auto YARA Rules' feature. 
 
 
 **Steps**  
