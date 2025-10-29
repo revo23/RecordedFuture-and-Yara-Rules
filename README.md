@@ -40,6 +40,7 @@ This capability allows for automated Sigma rule generation from Malware Intellig
 2. Search for malware family (e.g. privateloader)
 
 3. Generate YARA
+truncated 
 ```
 rule composite_hex_1 {
     meta:
