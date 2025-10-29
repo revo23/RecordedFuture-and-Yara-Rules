@@ -70,7 +70,28 @@ rule composite_hex_1 {
 
 Recorded Future outputs those byte sequences as continuous raw hex because it is a neutral data format suitable for many security tools. 
 
-4. 
+
+
+
+
+Turn off Defender
+
+```
+Method 2: Using the Group Policy Editor (For Windows Pro and Enterprise)
+
+Open the Group Policy Editor:
+Press Windows + R, type gpedit.msc, and press Enter.
+Navigate to Windows Defender Settings:
+Go to Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus.
+Disable Microsoft Defender Antivirus:
+Double-click on Turn off Microsoft Defender Antivirus.
+Select Enabled and click Apply, then OK.
+Restart Your Computer:
+Restart your computer to apply the changes. Windows Defender should now be permanently disabled.
+```
+<img width="1679" height="897" alt="image" src="https://github.com/user-attachments/assets/477c26ee-78da-442d-8cc8-c3e576836d4d" />
+
+Download PrivateLoader samples
 
 **Result**  
 
