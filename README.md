@@ -152,6 +152,6 @@ In a relatively quick way we will be able to detect newer variants of PrivateLoa
 **References**  
 https://yara.readthedocs.io/en/stable/index.html  
 https://support.recordedfuture.com/hc/en-us/articles/40569736620947-Auto-YARA-Rules  
-https://www.youtube.com/watch?v=hU8mUJb2Wq0 
-https://www.youtube.com/watch?v=fu71CljrxsU&t=1397s
+https://www.youtube.com/watch?v=hU8mUJb2Wq0  
+https://www.youtube.com/watch?v=fu71CljrxsU&t=1397s  
 https://www.darktrace.com/blog/privateloader-network-based-indicators-of-compromise  
