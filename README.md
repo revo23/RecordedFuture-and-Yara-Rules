@@ -118,15 +118,16 @@ Tamper protection > Toggle Real-time protection: off
 
 <img width="995" height="730" alt="image" src="https://github.com/user-attachments/assets/bca846cf-f3bf-44c8-97aa-ee21222ff135" />  
 
-10. Download PrivateLoader zip files and extract using 7zip (password: infected) into malwares folder  
+10. Download PrivateLoader malware from MalwareBazaar and extract using 7zip (password: infected) into malwares folder  
 <img width="712" height="385" alt="image" src="https://github.com/user-attachments/assets/b26eaa42-12cf-4ed4-89ef-e336ea7722e1" />
 
 11. Use privateloader YARA rule on malwares directory
 ```
 .\yara64.exe .\privateloader.yar .\malwares
 ```
+No results were seen, this is expected as the YARA rules looks for newer malwarew and the malware from MalwareBazaar are proabably old.
 
-
+12. Add one of the older malware from MalwareBazaar into the search query using it's SHA256 to include and generate a YARA rule that will detect it.
 
 
 **Result**  
