@@ -16,7 +16,7 @@ The Pyramid of Pain consists of seven levels, from easiest to hardest for attack
 
 **Overview**  
 1. Export YARA rules with latest malware indicators from RecordedFuture
-2. Use YARA rules to hunt in file repositories, backups, and shared drives especially with recursive directory scanning (also all files in its subdirectories)
+2. Use YARA rules to hunt for newer malware of the same variant in file repositories, backups, and shared drives especially with recursive directory scanning (also all files in its subdirectories)
 
 
 **Situation**  
